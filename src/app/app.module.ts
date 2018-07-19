@@ -14,6 +14,7 @@ import { InformacionService } from './services/informacion.service';
 import { ProductosService } from './services/productos.service';
 
 import { HttpModule } from '@angular/http';
+import { SearchComponent } from './components/search/search.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { HttpModule } from '@angular/http';
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    PortafolioItemComponent
+    PortafolioItemComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
