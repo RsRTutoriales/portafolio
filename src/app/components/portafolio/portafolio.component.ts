@@ -1,3 +1,4 @@
+import { ProductosService } from './../../services/productos.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class PortafolioComponent {
 
-  constructor() { }
+  constructor(public _ps:ProductosService) { }
 }

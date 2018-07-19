@@ -11,6 +11,7 @@ import { AboutComponent } from './components/about/about.component';
 import { PortafolioItemComponent } from './components/portafolio-item/portafolio-item.component';
 
 import { InformacionService } from './services/informacion.service';
+import { ProductosService } from './services/productos.service';
 
 import { HttpModule } from '@angular/http';
 
@@ -29,7 +30,7 @@ import { HttpModule } from '@angular/http';
     FeatureRoutingModule,
     HttpModule
   ],
-  providers: [InformacionService],
+  providers: [InformacionService, ProductosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

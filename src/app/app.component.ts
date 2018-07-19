@@ -1,3 +1,4 @@
+import { ProductosService } from './services/productos.service';
 import { InformacionService } from './services/informacion.service';
 import { Component } from '@angular/core';
 
@@ -8,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
-constructor( public _is: InformacionService ){
+constructor( public _is: InformacionService, _ps: ProductosService ){
 
 }
 
