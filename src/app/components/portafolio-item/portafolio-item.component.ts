@@ -22,7 +22,7 @@ export class PortafolioItemComponent implements OnInit {
         this.producto  = res.json();
         this.cod = parametros['id'];
         
-        console.log(this.producto);
+        //console.log(this.producto);
 
       })
     })

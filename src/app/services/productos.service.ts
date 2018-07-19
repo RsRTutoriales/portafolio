@@ -27,9 +27,7 @@ export class ProductosService {
     }else{
       this.filtrar_productos(termino);
     }
-
   }
-
 
   private filtrar_productos(termino:string){
 
@@ -42,9 +40,7 @@ export class ProductosService {
       if(prod.categoria.indexOf(termino) >=0 || prod.titulo.toLowerCase().indexOf(termino) >=0){
         this.productos_filtrado.push( prod );
       }
-
     })
-
   }
 
 
@@ -64,7 +60,6 @@ export class ProductosService {
         this.productos = res.json();
         resolve();
       });
-
     });
 
     return promesa;
