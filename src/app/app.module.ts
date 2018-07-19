@@ -10,6 +10,10 @@ import { PortafolioComponent } from './components/portafolio/portafolio.componen
 import { AboutComponent } from './components/about/about.component';
 import { PortafolioItemComponent } from './components/portafolio-item/portafolio-item.component';
 
+import { InformacionService } from './services/informacion.service';
+
+import { HttpModule } from '@angular/http';
+
 
 @NgModule({
   declarations: [
@@ -22,9 +26,10 @@ import { PortafolioItemComponent } from './components/portafolio-item/portafolio
   ],
   imports: [
     BrowserModule,
-    FeatureRoutingModule
+    FeatureRoutingModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [InformacionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
